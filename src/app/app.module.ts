@@ -12,12 +12,14 @@ import { MatToolbarModule,
         MatListModule,
         MatIconModule,
         MatInputModule,
-        MatProgressBarModule } from '@angular/material';
+        MatProgressBarModule } from '@angular/material'; //todos los componentes 
 
 import { APP_PROVIDERS } from './app.providers';
 import { MainComponent } from './main/main.component';
 import { AboutComponent } from './about/about.component';
+import { GitHubCardComponent } from "./git-hub-card/git-hub-card.component";
 import { ContactComponent } from './contact/contact.component';
+
 
 export const MATERIAL_COMPONENTS = [
   MatToolbarModule,
@@ -34,7 +36,9 @@ export const MATERIAL_COMPONENTS = [
     AppComponent,
     MainComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    GitHubCardComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -46,6 +50,6 @@ export const MATERIAL_COMPONENTS = [
     RouterModule.forRoot(routes)
   ],
   providers: [APP_PROVIDERS],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent]//APLICACION CON LA QUE DEBE DE INICIAR
 })
 export class AppModule { }
