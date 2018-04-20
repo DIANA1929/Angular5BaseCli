@@ -12,7 +12,9 @@ import { MatToolbarModule,
         MatListModule,
         MatIconModule,
         MatInputModule,
-        MatProgressBarModule } from '@angular/material'; //todos los componentes 
+        MatSelectModule,
+        MatProgressBarModule } from '@angular/material'; //todos los componentes
+      
 
 import { APP_PROVIDERS } from './app.providers';
 import { MainComponent } from './main/main.component';
@@ -28,7 +30,8 @@ export const MATERIAL_COMPONENTS = [
   MatListModule,
   MatIconModule,
   MatInputModule,
-  MatProgressBarModule
+  MatProgressBarModule,
+  MatSelectModule
 ]
 
 @NgModule({

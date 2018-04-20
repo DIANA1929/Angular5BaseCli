@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
@@ -10,6 +11,11 @@ export class MainComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
-
+  foods = [
+    {value: 'steak-0', viewValue: 'Steak'},
+    {value: 'pizza-1', viewValue: 'Pizza'},
+    {value: 'tacos-2', viewValue: 'Tacos'}
+  ];
 }
